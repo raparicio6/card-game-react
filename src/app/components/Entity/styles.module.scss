@@ -1,0 +1,46 @@
+@import '../../../scss/colors';
+
+$info-number-font-size: 19px;
+
+.container {
+  height: 140px;
+}
+
+.entity-image {
+  width: 80px;
+}
+
+.entity-image-container {
+  background-color: $emperor;
+  border-radius: 5% 0 0 5%;
+  padding: 0 15px;
+}
+
+.info {
+  color: $white;
+  font-size: 22px;
+  font-weight: 600;
+
+  &.number {
+    font-size: $info-number-font-size;
+  }
+}
+
+.name-hp-container {
+  background-color: $black;
+  border-radius: 0 5% 5% 0;
+  padding-left: 30px;
+  width: 160px;
+}
+
+.shield {
+  background-color: $emperor;
+  border-radius: 5%;
+  width: 175px;
+}
+
+.subtitle {
+  color: $very-light-grey;
+  font-size: $info-number-font-size;
+  font-weight: 20;
+}

@@ -326,7 +326,73 @@ exports[`App matches the snapshot 1`] = `
                   }
                 >
                   <Home>
-                    Hello!
+                    <div
+                      className="column center background-wild-sand all-screen-height container"
+                    >
+                      <EntityContainer
+                        hp={32}
+                        imageUrl="default-entity.png"
+                        maxHp={40}
+                        name="Enemy"
+                        shield={10}
+                      >
+                        <Entity
+                          hp={32}
+                          imageUrl="default-entity.png"
+                          maxHp={40}
+                          name="Enemy"
+                          shield={10}
+                        >
+                          <div
+                            className="row container"
+                          >
+                            <div
+                              className="column middle entityImageContainer"
+                            >
+                              <img
+                                alt=""
+                                className="entityImage"
+                                src="default-entity.png"
+                              />
+                            </div>
+                            <div
+                              className="column middle nameHpContainer"
+                            >
+                              <span
+                                className="info m-bottom-4"
+                              >
+                                Enemy
+                              </span>
+                              <span
+                                className="subtitle m-top-4"
+                              >
+                                : 
+                                <span
+                                  className="info number"
+                                >
+                                  32/40
+                                </span>
+                              </span>
+                            </div>
+                            <div
+                              className="shield m-left-4 row center middle"
+                            >
+                              <span
+                                className="subtitle"
+                              >
+                                : 
+                                 
+                                <span
+                                  className="info number"
+                                >
+                                  10
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </Entity>
+                      </EntityContainer>
+                    </div>
                   </Home>
                 </HomeContainer>
               </Route>
