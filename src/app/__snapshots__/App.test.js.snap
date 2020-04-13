@@ -327,71 +327,163 @@ exports[`App matches the snapshot 1`] = `
                 >
                   <Home>
                     <div
-                      className="column center background-wild-sand all-screen-height container"
+                      className="row center background-wild-sand all-screen-height container"
                     >
-                      <EntityContainer
-                        hp={32}
-                        imageUrl="default-entity.png"
-                        maxHp={40}
-                        name="Enemy"
-                        shield={10}
+                      <div
+                        className="column m-right-10"
                       >
-                        <Entity
+                        <EntityContainer
+                          className=""
                           hp={32}
-                          imageUrl="default-entity.png"
+                          imageUrl="monster.png"
                           maxHp={40}
                           name="Enemy"
-                          shield={10}
+                          shield={0}
                         >
-                          <div
-                            className="row container"
+                          <Entity
+                            className=""
+                            hp={32}
+                            imageUrl="monster.png"
+                            maxHp={40}
+                            name="Enemy"
+                            shield={0}
                           >
                             <div
-                              className="column middle entityImageContainer"
+                              className="row container "
                             >
-                              <img
-                                alt=""
-                                className="entityImage"
-                                src="default-entity.png"
-                              />
-                            </div>
-                            <div
-                              className="column middle nameHpContainer"
-                            >
-                              <span
-                                className="info m-bottom-4"
+                              <div
+                                className="column middle entityImageContainer"
                               >
-                                Enemy
-                              </span>
-                              <span
-                                className="subtitle m-top-4"
+                                <img
+                                  alt=""
+                                  className="entityImage"
+                                  src="monster.png"
+                                />
+                              </div>
+                              <div
+                                className="column middle nameHpContainer"
                               >
-                                : 
                                 <span
-                                  className="info number"
+                                  className="info m-bottom-3"
                                 >
-                                  32/40
+                                  Enemy
                                 </span>
-                              </span>
-                            </div>
-                            <div
-                              className="shield m-left-4 row center middle"
-                            >
-                              <span
-                                className="subtitle"
-                              >
-                                : 
-                                 
                                 <span
-                                  className="info number"
+                                  className="subtitle m-top-3"
                                 >
-                                  10
+                                  : 
+                                  <span
+                                    className="info number"
+                                  >
+                                    32/40
+                                  </span>
                                 </span>
-                              </span>
+                              </div>
+                              <div
+                                className="shieldContainer m-left-4 row center middle"
+                              >
+                                <span
+                                  className="subtitle shield"
+                                >
+                                  : 
+                                   
+                                  <span
+                                    className="info numberShield"
+                                  >
+                                    0
+                                  </span>
+                                </span>
+                              </div>
                             </div>
+                          </Entity>
+                        </EntityContainer>
+                        <EntityContainer
+                          className="m-top-6"
+                          hp={16}
+                          imageUrl="default-entity.png"
+                          maxHp={48}
+                          name="Player"
+                          shield={45}
+                        >
+                          <Entity
+                            className="m-top-6"
+                            hp={16}
+                            imageUrl="default-entity.png"
+                            maxHp={48}
+                            name="Player"
+                            shield={45}
+                          >
+                            <div
+                              className="row container m-top-6"
+                            >
+                              <div
+                                className="column middle entityImageContainer"
+                              >
+                                <img
+                                  alt=""
+                                  className="entityImage"
+                                  src="default-entity.png"
+                                />
+                              </div>
+                              <div
+                                className="column middle nameHpContainer"
+                              >
+                                <span
+                                  className="info m-bottom-3"
+                                >
+                                  Player
+                                </span>
+                                <span
+                                  className="subtitle m-top-3"
+                                >
+                                  : 
+                                  <span
+                                    className="info number"
+                                  >
+                                    16/48
+                                  </span>
+                                </span>
+                              </div>
+                              <div
+                                className="shieldContainer m-left-4 row center middle"
+                              >
+                                <span
+                                  className="subtitle shield"
+                                >
+                                  : 
+                                   
+                                  <span
+                                    className="info numberShield"
+                                  >
+                                    45
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </Entity>
+                        </EntityContainer>
+                      </div>
+                      <TurnsContainer
+                        current={12}
+                        left={8}
+                        past={11}
+                      >
+                        <Turns
+                          current={12}
+                          left={8}
+                          past={11}
+                        >
+                          <div
+                            className="column"
+                          >
+                            <span />
+                            <span />
+                            <span />
+                            <span />
+                            <span />
                           </div>
-                        </Entity>
-                      </EntityContainer>
+                        </Turns>
+                      </TurnsContainer>
                     </div>
                   </Home>
                 </HomeContainer>
