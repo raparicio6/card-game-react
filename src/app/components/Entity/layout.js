@@ -4,9 +4,9 @@ import { t } from 'i18next';
 
 import styles from './styles.module.scss';
 
-function Entity({ name, hp, maxHp, shield, imageUrl }) {
+function Entity({ name, hp, maxHp, shield, imageUrl, className }) {
   return (
-    <div className={`row ${styles.container}`}>
+    <div className={`row ${styles.container} ${className}`}>
       <div className={`column middle ${styles.entityImageContainer}`}>
         <img src={imageUrl} alt={t('Entity:imageAlt')} className={styles.entityImage} />
       </div>
@@ -31,7 +31,12 @@ Entity.propTypes = {
   imageUrl: string.isRequired,
   maxHp: number.isRequired,
   name: string.isRequired,
-  shield: number.isRequired
+  shield: number.isRequired,
+  className: string
+};
+
+Entity.defaultProps = {
+  className: ''
 };
 
 export default Entity;
