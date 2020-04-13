@@ -34,16 +34,13 @@ $padding-left-and-right: 20px;
   font-size: 18px;
   font-weight: 600;
 
+  &.big {
+    font-size: 20px;
+  }
+
   &.number {
     font-size: 40px;
   }
-}
-
-.turns {
-  color: $white;
-  font-family: Texta-Medium;
-  font-size: 20px;
-  font-weight: 600;
 }
 
 .turns-container {

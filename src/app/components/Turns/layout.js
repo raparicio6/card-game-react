@@ -8,7 +8,7 @@ function Turns({ current, past, left }) {
   return (
     <div className={`column ${styles.container}`}>
       <div className={styles.turnsContainer}>
-        <span className={`row center ${styles.turns}`}>{t('Turns:turns')}</span>
+        <span className={`row center ${styles.info} ${styles.big}`}>{t('Turns:turns')}</span>
       </div>
       <div className={styles.turnsInfoContainer}>
         <div className={`column center ${styles.bordered}`}>
