@@ -1,5 +1,6 @@
 import React from 'react';
 import { t } from 'i18next';
+import { number, string, array } from 'prop-types';
 
 import Entity from '../../components/Entity';
 import Turns from '../../components/Turns';
@@ -8,27 +9,71 @@ import monsterImage from '../../components/Entity/assets/monster.png';
 
 import styles from './styles.module.scss';
 
-function Game() {
+const FACTOR_TO_MULTIPLY_INDEXES = 17;
+
+function Game({
+  currentTurn,
+  turnsLeft,
+  turnsPast,
+  playerName,
+  playerHp,
+  playerMaxHp,
+  playerShield,
+  playerCardsInHand,
+  monsterHp,
+  monsterMaxHp,
+  monsterShield
+}) {
   return (
     <div className={`row center background-wild-sand all-screen-height ${styles.container}`}>
       <div className="column m-right-10">
-        <Entity imageUrl={monsterImage} hp={32} maxHp={40} name="Enemy" shield={0} />
-        <Entity hp={16} maxHp={48} name="Player" shield={45} className="m-top-6 m-bottom-10" />
+        <Entity
+          imageUrl={monsterImage}
+          hp={monsterHp}
+          maxHp={monsterMaxHp}
+          name={t('Game:monsterName')}
+          shield={monsterShield}
+        />
+        <Entity
+          hp={playerHp}
+          maxHp={playerMaxHp}
+          name={playerName}
+          shield={playerShield}
+          className="m-top-6 m-bottom-10"
+        />
         <div className={`row ${styles.cards}`}>
-          <Card entityType="player" type="damage" value={9} className="m-right-4" />
-          <Card entityType="player" type="shield" value={8} className="m-right-4" />
-          <Card entityType="player" type="damage" value={12} className="m-right-4" />
-          <Card entityType="player" type="heal" value={8} className="m-right-4" />
-          <Card entityType="player" type="shield" value={12} className="m-right-4" />
+          {playerCardsInHand.map((card, index) => (
+            <Card
+              key={`${index * FACTOR_TO_MULTIPLY_INDEXES}${card.type}${card.value}`}
+              type={card.type}
+              value={card.value}
+              entityType="player"
+              className="m-right-4"
+            />
+          ))}
         </div>
       </div>
       <div className="column center">
-        <Turns current={12} left={8} past={11} />
+        <Turns current={currentTurn} left={turnsLeft} past={turnsPast} />
         <Card className="m-top-1 m-bottom-1" entityType="monster" type="horror" />
         <span className={styles.monsterUses}>{t('Game:monsterUses')}</span>
       </div>
     </div>
   );
 }
+
+Game.propTypes = {
+  currentTurn: number.isRequired,
+  monsterHp: number.isRequired,
+  monsterMaxHp: number.isRequired,
+  monsterShield: number.isRequired,
+  playerCardsInHand: array.isRequired, // eslint-disable-line react/forbid-prop-types
+  playerHp: number.isRequired,
+  playerMaxHp: number.isRequired,
+  playerName: string.isRequired,
+  playerShield: number.isRequired,
+  turnsLeft: number.isRequired,
+  turnsPast: number.isRequired
+};
 
 export default Game;
