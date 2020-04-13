@@ -1,4 +1,5 @@
 import React from 'react';
+import { t } from 'i18next';
 
 import Entity from '../../components/Entity';
 import Turns from '../../components/Turns';
@@ -21,7 +22,11 @@ function Home() {
           <Card entityType="player" type="shield" value={12} className="m-right-4" />
         </div>
       </div>
-      <Turns current={12} left={8} past={11} />
+      <div className="column center">
+        <Turns current={12} left={8} past={11} />
+        <Card className="m-top-1 m-bottom-1" entityType="monster" type="horror" />
+        <span className={styles.monsterUses}>{t('Home:monsterUses')}</span>
+      </div>
     </div>
   );
 }

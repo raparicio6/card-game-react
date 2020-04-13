@@ -572,69 +572,97 @@ exports[`App matches the snapshot 1`] = `
                           </CardContainer>
                         </div>
                       </div>
-                      <TurnsContainer
-                        current={12}
-                        left={8}
-                        past={11}
+                      <div
+                        className="column center"
                       >
-                        <Turns
+                        <TurnsContainer
                           current={12}
                           left={8}
                           past={11}
                         >
-                          <div
-                            className="column container"
+                          <Turns
+                            current={12}
+                            left={8}
+                            past={11}
                           >
                             <div
-                              className="turnsContainer"
-                            >
-                              <span
-                                className="row center turns"
-                              />
-                            </div>
-                            <div
-                              className="turnsInfoContainer"
+                              className="column container"
                             >
                               <div
-                                className="column center bordered"
+                                className="turnsContainer"
                               >
                                 <span
-                                  className="info"
+                                  className="row center turns"
                                 />
-                                <span
-                                  className="info number m-top-4"
+                              </div>
+                              <div
+                                className="turnsInfoContainer"
+                              >
+                                <div
+                                  className="column center bordered"
                                 >
-                                  12
-                                </span>
-                                <span
-                                  className="info m-top-10"
+                                  <span
+                                    className="info"
+                                  />
+                                  <span
+                                    className="info number m-top-4"
+                                  >
+                                    12
+                                  </span>
+                                  <span
+                                    className="info m-top-10"
+                                  />
+                                  <span
+                                    className="info number m-top-4"
+                                  >
+                                    11
+                                  </span>
+                                  <span
+                                    className="info m-top-10"
+                                  />
+                                  <span
+                                    className="info number m-top-4"
+                                  >
+                                    8
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                className="row center middle endTurnContainer"
+                              >
+                                <button
+                                  className="endTurnButton"
+                                  type="button"
                                 />
-                                <span
-                                  className="info number m-top-4"
-                                >
-                                  11
-                                </span>
-                                <span
-                                  className="info m-top-10"
-                                />
-                                <span
-                                  className="info number m-top-4"
-                                >
-                                  8
-                                </span>
                               </div>
                             </div>
+                          </Turns>
+                        </TurnsContainer>
+                        <CardContainer
+                          className="m-top-1 m-bottom-1"
+                          entityType="monster"
+                          type="horror"
+                          value={0}
+                        >
+                          <Card
+                            className="m-top-1 m-bottom-1"
+                            imageUrl="./cards/monster/horror/0.png"
+                          >
                             <div
-                              className="row center middle endTurnContainer"
+                              className="m-top-1 m-bottom-1"
                             >
-                              <button
-                                className="endTurnButton"
-                                type="button"
+                              <img
+                                alt=""
+                                className="cardImage"
+                                src="./cards/monster/horror/0.png"
                               />
                             </div>
-                          </div>
-                        </Turns>
-                      </TurnsContainer>
+                          </Card>
+                        </CardContainer>
+                        <span
+                          className="monsterUses"
+                        />
+                      </div>
                     </div>
                   </Home>
                 </HomeContainer>
