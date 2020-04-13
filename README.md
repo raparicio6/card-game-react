@@ -1,18 +1,13 @@
-# card-game-react
+# Card Game
 
-[![Build Status](https://circleci.com/gh/raparicio6/card-game-react.svg?style=shield)](https://circleci.com/gh/raparicio6/card-game-react)
-
-&nbsp;
 <img alt="Monster" src="./public/cards/monster/horror/0.png" height="200" width="200">
 
-&nbsp;
 ## Next Steps
 * Use some kind of animation to show the user what happened immediately after his turn
 * Search for Apollo cache policies in order to leverage its potential
 * Make the game responsive
 * Handle posible errors from back-end
 
-&nbsp;
 ## Getting Started
 
 ### Installing
