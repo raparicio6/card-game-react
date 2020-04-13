@@ -17,9 +17,10 @@ function Entity({ name, hp, maxHp, shield, imageUrl, className }) {
           <span className={`${styles.info} ${styles.number}`}>{`${hp}/${maxHp}`}</span>
         </span>
       </div>
-      <div className={`${styles.shield} m-left-4 row center middle`}>
-        <span className={styles.subtitle}>
-          {`${t('Entity:shield')}: `} <span className={`${styles.info} ${styles.number}`}>{shield}</span>
+      <div className={`${styles.shieldContainer} m-left-4 row center middle`}>
+        <span className={`${styles.subtitle} ${styles.shield}`}>
+          {`${t('Entity:shield')}: `}{' '}
+          <span className={`${styles.info} ${styles.numberShield}`}>{shield}</span>
         </span>
       </div>
     </div>

@@ -1,6 +1,7 @@
 @import '../../../scss/colors';
 
 $info-number-font-size: 20px;
+$info-number-shield-font-size: 26px;
 
 .container {
   height: 130px;
@@ -25,6 +26,10 @@ $info-number-font-size: 20px;
   &.number {
     font-size: $info-number-font-size;
   }
+
+  &.number-shield {
+    font-size: $info-number-shield-font-size;
+  }
 }
 
 .name-hp-container {
@@ -34,7 +39,7 @@ $info-number-font-size: 20px;
   width: 160px;
 }
 
-.shield {
+.shield-container {
   background-color: $emperor;
   border-radius: 5%;
   width: 175px;
@@ -44,5 +49,8 @@ $info-number-font-size: 20px;
   color: $very-light-grey;
   font-family: Texta-Medium;
   font-size: $info-number-font-size;
-  font-weight: 20;
+
+  &.shield {
+    font-size: $info-number-shield-font-size;
+  }
 }
