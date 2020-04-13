@@ -1,10 +1,10 @@
 import React from 'react';
-import { number } from 'prop-types';
+import { number, func } from 'prop-types';
 import { t } from 'i18next';
 
 import styles from './styles.module.scss';
 
-function Turns({ current, past, left }) {
+function Turns({ current, past, left, handleEndTurnOnClick }) {
   return (
     <div className={`column ${styles.container}`}>
       <div className={styles.turnsContainer}>
@@ -21,7 +21,7 @@ function Turns({ current, past, left }) {
         </div>
       </div>
       <div className={`row center middle ${styles.endTurnContainer}`}>
-        <button type="button" className={styles.endTurnButton}>
+        <button type="button" className={styles.endTurnButton} onClick={handleEndTurnOnClick}>
           {t('Turns:endTurn')}
         </button>
       </div>
@@ -31,6 +31,7 @@ function Turns({ current, past, left }) {
 
 Turns.propTypes = {
   current: number.isRequired,
+  handleEndTurnOnClick: func.isRequired,
   left: number.isRequired,
   past: number.isRequired
 };

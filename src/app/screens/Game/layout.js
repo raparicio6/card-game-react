@@ -1,6 +1,6 @@
 import React from 'react';
 import { t } from 'i18next';
-import { number, string, array } from 'prop-types';
+import { number, string, array, func } from 'prop-types';
 
 import Entity from '../../components/Entity';
 import Turns from '../../components/Turns';
@@ -22,7 +22,10 @@ function Game({
   playerCardsInHand,
   monsterHp,
   monsterMaxHp,
-  monsterShield
+  monsterShield,
+  monsterCardType,
+  mosterCardValue,
+  handleEndTurnOnClick
 }) {
   return (
     <div className={`row center background-wild-sand all-screen-height ${styles.container}`}>
@@ -49,14 +52,29 @@ function Game({
               value={card.value}
               entityType="player"
               className="m-right-4"
+              reportClick
             />
           ))}
         </div>
       </div>
       <div className="column center">
-        <Turns current={currentTurn} left={turnsLeft} past={turnsPast} />
-        <Card className="m-top-1 m-bottom-1" entityType="monster" type="horror" />
-        <span className={styles.monsterUses}>{t('Game:monsterUses')}</span>
+        <Turns
+          current={currentTurn}
+          left={turnsLeft}
+          past={turnsPast}
+          handleEndTurnOnClick={handleEndTurnOnClick}
+        />
+        {monsterCardType && (
+          <>
+            <Card
+              className="m-top-1 m-bottom-1"
+              entityType="monster"
+              type={monsterCardType}
+              value={mosterCardValue}
+            />
+            <span className={styles.monsterUses}>{t('Game:monsterUses')}</span>
+          </>
+        )}
       </div>
     </div>
   );
@@ -64,6 +82,7 @@ function Game({
 
 Game.propTypes = {
   currentTurn: number.isRequired,
+  handleEndTurnOnClick: func.isRequired,
   monsterHp: number.isRequired,
   monsterMaxHp: number.isRequired,
   monsterShield: number.isRequired,
@@ -73,7 +92,9 @@ Game.propTypes = {
   playerName: string.isRequired,
   playerShield: number.isRequired,
   turnsLeft: number.isRequired,
-  turnsPast: number.isRequired
+  turnsPast: number.isRequired,
+  monsterCardType: string,
+  mosterCardValue: number
 };
 
 export default Game;

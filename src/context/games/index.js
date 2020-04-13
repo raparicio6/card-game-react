@@ -18,7 +18,11 @@ const INITIAL_STATE = {
   monsterHp: null,
   monsterMaxHp: null,
   monsterShield: null,
-  turns: []
+  turns: [],
+  lastClickedCard: null,
+  monsterEffect: null,
+  winner: null,
+  statusAfterTurnOfPlayer: null
 };
 
 export const gameState = { ...INITIAL_STATE };
@@ -38,6 +42,23 @@ const reducer = {
     monsterMaxHp: monster.hp,
     monsterShield: monster.shield,
     turns
+  }),
+  [actions.SET_LAST_CLICKED_CARD]: (state, { payload }) => ({ ...state, lastClickedCard: payload }),
+  [actions.PLAY_TURN]: (
+    state,
+    { payload: { player, monster, turns, monsterEffect, winner, statusAfterTurnOfPlayer } }
+  ) => ({
+    ...state,
+    currentTurn: turns.length,
+    playerHp: player.hp,
+    playerShield: player.shield,
+    playerCardsInHand: player.cardsInHand,
+    monsterHp: monster.hp,
+    monsterShield: monster.shield,
+    turns,
+    monsterEffect,
+    statusAfterTurnOfPlayer,
+    winner
   })
 };
 
