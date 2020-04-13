@@ -25,7 +25,7 @@ function Game() {
       <div className="column center">
         <Turns current={12} left={8} past={11} />
         <Card className="m-top-1 m-bottom-1" entityType="monster" type="horror" />
-        <span className={styles.monsterUses}>{t('Home:monsterUses')}</span>
+        <span className={styles.monsterUses}>{t('Game:monsterUses')}</span>
       </div>
     </div>
   );

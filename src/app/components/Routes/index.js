@@ -11,7 +11,7 @@ function AppRoutes() {
   return (
     <Router>
       <Switch>
-        <Route exact path={Routes.GAME} component={Game} />
+        <Route path={Routes.GAME} component={Game} />
         <Route exact path={Routes.HOME} component={Home} />
         <Redirect to={Routes.HOME} />
       </Switch>

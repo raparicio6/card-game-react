@@ -1,18 +1,67 @@
 @import '../../../scss/colors';
 
-.container {
-  padding-top: 50px;
+/* stylelint-disable */
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
 }
+/* stylelint-enable */
 
-.cards {
-  flex-wrap: wrap;
-  max-width: 500px;
+.container {
+  margin: auto;
+  max-width: 400px;
   width: 100%;
 }
 
-.monster-uses {
-  color: $black;
+.lets-play {
+  background-color: $eastern-blue;
+  border-radius: 5%;
+  color: $white;
   font-family: Texta-Medium;
   font-size: 20px;
   font-weight: 600;
+  padding: 20px 0;
+}
+
+.name-input {
+  background-color: $gray;
+  border-radius: 5%;
+  color: $white;
+  font-family: Texta-Medium;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0 10px 25px;
+
+  /* stylelint-disable */
+  @include placeholder {
+    color: $white;
+    font-family: Texta-Medium;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  /* stylelint-enable */
+}
+
+.title {
+  color: $emperor;
+  font-family: Texta-Medium;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.what-is-your-name {
+  color: $emperor;
+  font-family: Texta-Medium;
+  font-size: 26px;
+  font-weight: 400;
 }

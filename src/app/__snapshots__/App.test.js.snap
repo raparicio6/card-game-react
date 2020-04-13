@@ -327,20 +327,27 @@ exports[`App matches the snapshot 1`] = `
                 >
                   <Home>
                     <div
-                      className="column middle center background-wild-sand all-screen-height"
+                      className="row background-wild-sand all-screen-height"
                     >
-                      <h1
-                        className="info"
-                      />
-                      <h2
-                        className="info"
-                      />
-                      <span
-                        className="info"
-                      />
-                      <span
-                        className="info"
-                      />
+                      <div
+                        className="column container"
+                      >
+                        <h1
+                          className="title"
+                        />
+                        <h2
+                          className="whatIsYourName m-top-6"
+                        />
+                        <input
+                          className="nameInput placeholder m-top-10"
+                          placeholder=""
+                          type="text"
+                        />
+                        <button
+                          className="letsPlay m-top-5"
+                          type="button"
+                        />
+                      </div>
                     </div>
                   </Home>
                 </HomeContainer>

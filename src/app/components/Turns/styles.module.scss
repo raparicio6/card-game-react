@@ -1,5 +1,7 @@
 @import '../../../scss/colors';
 
+$padding-left-and-right: 20px;
+
 .bordered {
   border: 1px solid $emperor;
   padding: 45px 0;
@@ -13,16 +15,17 @@
   background-color: $eastern-blue;
   border-radius: 5%;
   color: $white;
+  flex-grow: 1;
   font-family: Texta-Medium;
   font-size: 16px;
-  font-weight: 500;
-  padding: 10px 30px;
+  font-weight: 600;
+  padding: 10px 0;
 }
 
 .end-turn-container {
   background-color: $black;
   border-radius: 0 0 5% 5%;
-  padding-bottom: 20px;
+  padding: 0 $padding-left-and-right 20px;
 }
 
 .info {
@@ -51,5 +54,5 @@
 
 .turns-info-container {
   background-color: $black;
-  padding: 30px 20px 25px;
+  padding: 30px $padding-left-and-right 25px;
 }
