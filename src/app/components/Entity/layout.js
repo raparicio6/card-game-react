@@ -11,8 +11,8 @@ function Entity({ name, hp, maxHp, shield, imageUrl, className }) {
         <img src={imageUrl} alt={t('Entity:imageAlt')} className={styles.entityImage} />
       </div>
       <div className={`column middle ${styles.nameHpContainer}`}>
-        <span className={`${styles.info} m-bottom-4`}>{name}</span>
-        <span className={`${styles.subtitle} m-top-4`}>
+        <span className={`${styles.info} m-bottom-3`}>{name}</span>
+        <span className={`${styles.subtitle} m-top-3`}>
           {`${t('Entity:hp')}: `}
           <span className={`${styles.info} ${styles.number}`}>{`${hp}/${maxHp}`}</span>
         </span>

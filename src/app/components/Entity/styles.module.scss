@@ -1,9 +1,9 @@
 @import '../../../scss/colors';
 
-$info-number-font-size: 19px;
+$info-number-font-size: 20px;
 
 .container {
-  height: 140px;
+  height: 130px;
 }
 
 .entity-image {
@@ -18,7 +18,8 @@ $info-number-font-size: 19px;
 
 .info {
   color: $white;
-  font-size: 22px;
+  font-family: Texta-Medium;
+  font-size: 24px;
   font-weight: 600;
 
   &.number {
@@ -41,6 +42,7 @@ $info-number-font-size: 19px;
 
 .subtitle {
   color: $very-light-grey;
+  font-family: Texta-Medium;
   font-size: $info-number-font-size;
   font-weight: 20;
 }
