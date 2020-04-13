@@ -4,7 +4,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
 
-describe('Home', () => {
+describe('Game', () => {
   it('example test', () => {
     expect(2).toBe(2);
   });

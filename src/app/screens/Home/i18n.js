@@ -1,9 +1,15 @@
 import i18next from 'i18next';
 
 i18next.addResources('es', 'Home', {
-  monsterUses: 'El monstruo usa'
+  title: 'Bienvenido/a al Juego de Bons',
+  whatIsYourName: '¿Cuál es tu nombre?',
+  name: 'NOMBRE',
+  letsPlay: 'A JUGAR'
 });
 
 i18next.addResources('en', 'Home', {
-  monsterUses: 'The monster uses'
+  title: 'Welcome to Bons Game',
+  whatIsYourName: "What's your name?",
+  name: 'NAME',
+  letsPlay: "LET'S PLAY"
 });

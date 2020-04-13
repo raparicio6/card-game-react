@@ -1,5 +1,6 @@
 export const Routes = {
-  HOME: '/'
+  HOME: '/',
+  GAME: '/game'
 };
 
 export const LANGUAGES = {
