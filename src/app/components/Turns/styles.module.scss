@@ -1,46 +1,55 @@
 @import '../../../scss/colors';
 
-$info-number-font-size: 19px;
+.bordered {
+  border: 1px solid $emperor;
+  padding: 45px 0;
+}
 
 .container {
-  height: 140px;
+  width: 170px;
 }
 
-.entity-image {
-  width: 80px;
+.end-turn-button {
+  background-color: $eastern-blue;
+  border-radius: 5%;
+  color: $white;
+  font-family: Texta-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 30px;
 }
 
-.entity-image-container {
-  background-color: $emperor;
-  border-radius: 5% 0 0 5%;
-  padding: 0 15px;
+.end-turn-container {
+  background-color: $black;
+  border-radius: 0 0 5% 5%;
+  padding-bottom: 20px;
 }
 
 .info {
   color: $white;
-  font-size: 22px;
+  font-family: Texta-Medium;
+  font-size: 18px;
   font-weight: 600;
 
   &.number {
-    font-size: $info-number-font-size;
+    font-size: 40px;
   }
 }
 
-.name-hp-container {
-  background-color: $black;
-  border-radius: 0 5% 5% 0;
-  padding-left: 30px;
-  width: 160px;
+.turns {
+  color: $white;
+  font-family: Texta-Medium;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.shield {
+.turns-container {
   background-color: $emperor;
-  border-radius: 5%;
-  width: 175px;
+  border-radius: 5% 5% 0 0;
+  padding: 15px 0;
 }
 
-.subtitle {
-  color: $very-light-grey;
-  font-size: $info-number-font-size;
-  font-weight: 20;
+.turns-info-container {
+  background-color: $black;
+  padding: 30px 20px;
 }

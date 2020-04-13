@@ -474,13 +474,55 @@ exports[`App matches the snapshot 1`] = `
                           past={11}
                         >
                           <div
-                            className="column"
+                            className="column container"
                           >
-                            <span />
-                            <span />
-                            <span />
-                            <span />
-                            <span />
+                            <div
+                              className="turnsContainer"
+                            >
+                              <span
+                                className="row center turns"
+                              />
+                            </div>
+                            <div
+                              className="turnsInfoContainer"
+                            >
+                              <div
+                                className="column center bordered"
+                              >
+                                <span
+                                  className="info"
+                                />
+                                <span
+                                  className="info number m-top-4"
+                                >
+                                  12
+                                </span>
+                                <span
+                                  className="info m-top-10"
+                                />
+                                <span
+                                  className="info number m-top-4"
+                                >
+                                  11
+                                </span>
+                                <span
+                                  className="info m-top-10"
+                                />
+                                <span
+                                  className="info number m-top-4"
+                                >
+                                  8
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              className="row center middle endTurnContainer"
+                            >
+                              <button
+                                className="endTurnButton"
+                                type="button"
+                              />
+                            </div>
                           </div>
                         </Turns>
                       </TurnsContainer>
