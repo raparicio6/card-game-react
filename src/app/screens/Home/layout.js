@@ -2,13 +2,16 @@ import React from 'react';
 import { t } from 'i18next';
 import { func } from 'prop-types';
 
+import LanguageButtons from '../../components/LanguageButtons';
+
 import styles from './styles.module.scss';
 
 function Home({ handleOnSubmit, handleOnChange }) {
   return (
     <div className="row background-wild-sand all-screen-height">
       <div className={`column ${styles.container}`}>
-        <h1 className={styles.title}>{t('Home:title')}</h1>
+        <LanguageButtons />
+        <h1 className={`${styles.title} m-top-3`}>{t('Home:title')}</h1>
         <h2 className={`${styles.whatIsYourName} m-top-6`}>{t('Home:whatIsYourName')}</h2>
         <form onSubmit={handleOnSubmit}>
           <div className="column">

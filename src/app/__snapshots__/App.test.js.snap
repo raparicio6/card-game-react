@@ -1512,8 +1512,34 @@ exports[`App matches the snapshot 1`] = `
                       <div
                         className="column container"
                       >
+                        <LanguageButtonsContainer>
+                          <LanguageButtons
+                            handleOnClick={[Function]}
+                          >
+                            <div
+                              className="row container"
+                            >
+                              <button
+                                className="esButton"
+                                data-lang="es"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                ES
+                              </button>
+                              <button
+                                className="enButton"
+                                data-lang="en"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                EN
+                              </button>
+                            </div>
+                          </LanguageButtons>
+                        </LanguageButtonsContainer>
                         <h1
-                          className="title"
+                          className="title m-top-3"
                         />
                         <h2
                           className="whatIsYourName m-top-6"

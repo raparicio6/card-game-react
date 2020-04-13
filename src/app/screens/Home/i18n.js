@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 
 i18next.addResources('es', 'Home', {
-  title: 'Bienvenido/a al Juego de Bons',
+  title: 'Bienvenido/a al juego',
   whatIsYourName: '¿Cuál es tu nombre?',
   name: 'NOMBRE',
   letsPlay: 'A JUGAR'
