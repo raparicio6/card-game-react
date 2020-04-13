@@ -1,13 +1,16 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { useMutation } from '@apollo/react-hooks';
+import { useHistory } from 'react-router-dom';
 
 import { useGlobalValue } from '../../../context';
 import { PLAY_TURN } from '../../../queries/GamesQueries';
 import { actionCreators } from '../../../context/games/actions';
+import { Routes } from '../../constants';
 
 import Game from './layout';
 
 function GameContainer() {
+  const history = useHistory();
   const [{ gameState }, dispatchGlobal] = useGlobalValue();
   const {
     id,
@@ -41,6 +44,12 @@ function GameContainer() {
     },
     [playTurn, dispatchGlobal]
   );
+
+  useEffect(() => {
+    if (winner) {
+      history.push(Routes.RESULT);
+    }
+  }, [winner, history]);
 
   return (
     <Game
