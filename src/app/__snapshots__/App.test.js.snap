@@ -462,6 +462,94 @@ exports[`App matches the snapshot 1`] = `
                             </div>
                           </Entity>
                         </EntityContainer>
+                        <div
+                          className="row"
+                        >
+                          <CardContainer
+                            className="m-top-10 m-right-4"
+                            entityType="player"
+                            type="damage"
+                            value={9}
+                          >
+                            <Card
+                              className="m-top-10 m-right-4"
+                              imageUrl="./cards/player/damage/9.png"
+                            >
+                              <div
+                                className="m-top-10 m-right-4"
+                              >
+                                <img
+                                  alt=""
+                                  className="cardImage"
+                                  src="./cards/player/damage/9.png"
+                                />
+                              </div>
+                            </Card>
+                          </CardContainer>
+                          <CardContainer
+                            className="m-top-10 m-right-4"
+                            entityType="player"
+                            type="shield"
+                            value={8}
+                          >
+                            <Card
+                              className="m-top-10 m-right-4"
+                              imageUrl="./cards/player/shield/8.png"
+                            >
+                              <div
+                                className="m-top-10 m-right-4"
+                              >
+                                <img
+                                  alt=""
+                                  className="cardImage"
+                                  src="./cards/player/shield/8.png"
+                                />
+                              </div>
+                            </Card>
+                          </CardContainer>
+                          <CardContainer
+                            className="m-top-10 m-right-4"
+                            entityType="player"
+                            type="damage"
+                            value={12}
+                          >
+                            <Card
+                              className="m-top-10 m-right-4"
+                              imageUrl="./cards/player/damage/12.png"
+                            >
+                              <div
+                                className="m-top-10 m-right-4"
+                              >
+                                <img
+                                  alt=""
+                                  className="cardImage"
+                                  src="./cards/player/damage/12.png"
+                                />
+                              </div>
+                            </Card>
+                          </CardContainer>
+                          <CardContainer
+                            className="m-top-10"
+                            entityType="player"
+                            type="heal"
+                            value={8}
+                          >
+                            <Card
+                              className="m-top-10"
+                              imageUrl="./cards/player/heal/8.png"
+                            >
+                              <div
+                                className="m-top-10"
+                              >
+                                <img
+                                  alt=""
+                                  className="cardImage"
+                                  src="./cards/player/heal/8.png"
+                                />
+                              </div>
+                            </Card>
+                          </CardContainer>
+                        </div>
                       </div>
                       <TurnsContainer
                         current={12}
