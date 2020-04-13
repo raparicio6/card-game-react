@@ -3,3 +3,9 @@
 .container {
   padding-top: 50px;
 }
+
+.cards {
+  flex-wrap: wrap;
+  max-width: 500px;
+  width: 100%;
+}

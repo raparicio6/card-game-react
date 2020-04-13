@@ -398,7 +398,7 @@ exports[`App matches the snapshot 1`] = `
                           </Entity>
                         </EntityContainer>
                         <EntityContainer
-                          className="m-top-6"
+                          className="m-top-6 m-bottom-10"
                           hp={16}
                           imageUrl="default-entity.png"
                           maxHp={48}
@@ -406,7 +406,7 @@ exports[`App matches the snapshot 1`] = `
                           shield={45}
                         >
                           <Entity
-                            className="m-top-6"
+                            className="m-top-6 m-bottom-10"
                             hp={16}
                             imageUrl="default-entity.png"
                             maxHp={48}
@@ -414,7 +414,7 @@ exports[`App matches the snapshot 1`] = `
                             shield={45}
                           >
                             <div
-                              className="row container m-top-6"
+                              className="row container m-top-6 m-bottom-10"
                             >
                               <div
                                 className="column middle entityImageContainer"
@@ -463,20 +463,20 @@ exports[`App matches the snapshot 1`] = `
                           </Entity>
                         </EntityContainer>
                         <div
-                          className="row"
+                          className="row cards"
                         >
                           <CardContainer
-                            className="m-top-10 m-right-4"
+                            className="m-right-4"
                             entityType="player"
                             type="damage"
                             value={9}
                           >
                             <Card
-                              className="m-top-10 m-right-4"
+                              className="m-right-4"
                               imageUrl="./cards/player/damage/9.png"
                             >
                               <div
-                                className="m-top-10 m-right-4"
+                                className="m-right-4"
                               >
                                 <img
                                   alt=""
@@ -487,17 +487,17 @@ exports[`App matches the snapshot 1`] = `
                             </Card>
                           </CardContainer>
                           <CardContainer
-                            className="m-top-10 m-right-4"
+                            className="m-right-4"
                             entityType="player"
                             type="shield"
                             value={8}
                           >
                             <Card
-                              className="m-top-10 m-right-4"
+                              className="m-right-4"
                               imageUrl="./cards/player/shield/8.png"
                             >
                               <div
-                                className="m-top-10 m-right-4"
+                                className="m-right-4"
                               >
                                 <img
                                   alt=""
@@ -508,17 +508,17 @@ exports[`App matches the snapshot 1`] = `
                             </Card>
                           </CardContainer>
                           <CardContainer
-                            className="m-top-10 m-right-4"
+                            className="m-right-4"
                             entityType="player"
                             type="damage"
                             value={12}
                           >
                             <Card
-                              className="m-top-10 m-right-4"
+                              className="m-right-4"
                               imageUrl="./cards/player/damage/12.png"
                             >
                               <div
-                                className="m-top-10 m-right-4"
+                                className="m-right-4"
                               >
                                 <img
                                   alt=""
@@ -529,22 +529,43 @@ exports[`App matches the snapshot 1`] = `
                             </Card>
                           </CardContainer>
                           <CardContainer
-                            className="m-top-10"
+                            className="m-right-4"
                             entityType="player"
                             type="heal"
                             value={8}
                           >
                             <Card
-                              className="m-top-10"
+                              className="m-right-4"
                               imageUrl="./cards/player/heal/8.png"
                             >
                               <div
-                                className="m-top-10"
+                                className="m-right-4"
                               >
                                 <img
                                   alt=""
                                   className="cardImage"
                                   src="./cards/player/heal/8.png"
+                                />
+                              </div>
+                            </Card>
+                          </CardContainer>
+                          <CardContainer
+                            className="m-right-4"
+                            entityType="player"
+                            type="shield"
+                            value={12}
+                          >
+                            <Card
+                              className="m-right-4"
+                              imageUrl="./cards/player/shield/12.png"
+                            >
+                              <div
+                                className="m-right-4"
+                              >
+                                <img
+                                  alt=""
+                                  className="cardImage"
+                                  src="./cards/player/shield/12.png"
                                 />
                               </div>
                             </Card>
