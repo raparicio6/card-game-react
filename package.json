@@ -1,14 +1,13 @@
 {
   "name": "card-game-react",
-  "version": "1.0.0",
-  "private": true,
+  "version": "0.1.0",
   "dependencies": {
     "@apollo/react-hooks": "^3.1.4",
     "apollo-boost": "^0.4.7",
     "babel-plugin-module-resolver": "^3.2.0",
     "graphql": "^15.0.0",
     "i18next": "^13.1.5",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
@@ -83,8 +82,8 @@
     "url": "git@github.com:raparicio6/card-game-react.git"
   },
   "engines": {
-    "node": ">= 10.15.3",
-    "npm": ">= 6.9.0"
+    "node": "12.16.3",
+    "npm": "6.14.4"
   },
   "husky": {
     "hooks": {
