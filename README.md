@@ -20,7 +20,7 @@ Nvm approach is preferred.
 Install dependencies by running `npm i`.
 
 To start the app run:  
-`REACT_APP_BASE_URL=http://localhost:8080 npm start`  
+`REACT_APP_GAME_BASE_URL=http://localhost:8080 npm start`  
 By default [GraphQL](https://github.com/raparicio6/card-game-graphql) uses *http://localhost:8080* as the base url. Before running the app, make sure you have GraphQL running along with [Backend](https://github.com/raparicio6/card-game-node).
 
 ### Only building
