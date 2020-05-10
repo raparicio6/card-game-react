@@ -3,8 +3,9 @@
 <img alt="Monster" src="./public/cards/monster/horror/0.png" height="200" width="200">
 
 ## Next Steps
-* Use some kind of animation to show the user what happened immediately after his turn
 * Search for Apollo cache policies in order to leverage its potential
+* Authenticate routes so the player can only go to /
+* Use some kind of animation to show the player what happened immediately after his turn
 * Make the game responsive
 * Handle posible errors from back-end
 
