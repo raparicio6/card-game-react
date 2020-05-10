@@ -1,6 +1,6 @@
 # Card Game
 
-<img alt="Monster" src="./public/cards/monster/horror/0.png" height="200" width="200">
+<img alt="Monster" src="./app-image.png">
 
 ## Next Steps
 * Search for Apollo cache policies in order to leverage its potential
@@ -21,7 +21,7 @@ Install dependencies by running `npm i`.
 
 To start the app run:  
 `REACT_APP_BASE_URL=http://localhost:8080 npm start`  
-By default [GraphQL](https://github.com/raparicio6/card-game-graphql) uses *http://localhost:8080* as the base url.
+By default [GraphQL](https://github.com/raparicio6/card-game-graphql) uses *http://localhost:8080* as the base url. Before running the app, make sure you have GraphQL running along with [backend](https://github.com/raparicio6/card-game-node).
 
 ### Only building
 
