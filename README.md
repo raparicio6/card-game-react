@@ -4,7 +4,7 @@
 
 ## Next Steps
 * Search for Apollo cache policies in order to leverage its potential
-* Handle cardWasNotPlayedError from back-end if player do not pick any card when he should
+* Handle cardWasNotPlayedError from Backend if player do not pick any card when he should
 * Authenticate routes so the player can only go to /
 * Validate player's name is not empty
 * Use some kind of animation to show the player what happened immediately after his turn
@@ -21,7 +21,7 @@ Install dependencies by running `npm i`.
 
 To start the app run:  
 `REACT_APP_BASE_URL=http://localhost:8080 npm start`  
-By default [GraphQL](https://github.com/raparicio6/card-game-graphql) uses *http://localhost:8080* as the base url. Before running the app, make sure you have GraphQL running along with [backend](https://github.com/raparicio6/card-game-node).
+By default [GraphQL](https://github.com/raparicio6/card-game-graphql) uses *http://localhost:8080* as the base url. Before running the app, make sure you have GraphQL running along with [Backend](https://github.com/raparicio6/card-game-node).
 
 ### Only building
 
