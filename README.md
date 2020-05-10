@@ -4,10 +4,11 @@
 
 ## Next Steps
 * Search for Apollo cache policies in order to leverage its potential
+* Handle cardWasNotPlayedError from back-end if player do not pick any card when he should
 * Authenticate routes so the player can only go to /
+* Validate player's name is not empty
 * Use some kind of animation to show the player what happened immediately after his turn
 * Make the game responsive
-* Handle posible errors from back-end
 
 ## Getting Started
 

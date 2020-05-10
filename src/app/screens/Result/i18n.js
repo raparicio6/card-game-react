@@ -7,5 +7,5 @@ i18next.addResources('es', 'Result', {
 
 i18next.addResources('en', 'Result', {
   winMessage: 'Congratulations! You Win! (:',
-  loseMessage: 'Ups.. you lose! :('
+  loseMessage: 'Ups.. you lost! :('
 });

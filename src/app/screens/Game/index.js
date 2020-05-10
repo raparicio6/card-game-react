@@ -37,13 +37,10 @@ function GameContainer() {
     }
   });
 
-  const handleEndTurnOnClick = useCallback(
-    async event => {
-      const result = await playTurn();
-      dispatchGlobal(actionCreators.playTurn(result.data.playTurn));
-    },
-    [playTurn, dispatchGlobal]
-  );
+  const handleEndTurnOnClick = useCallback(async () => {
+    const result = await playTurn();
+    dispatchGlobal(actionCreators.playTurn(result.data.playTurn));
+  }, [playTurn, dispatchGlobal]);
 
   useEffect(() => {
     if (winner) {
@@ -65,8 +62,8 @@ function GameContainer() {
       turnsLeft={maxNumberOfTurns - currentTurn}
       turnsPast={currentTurn - 1}
       handleEndTurnOnClick={handleEndTurnOnClick}
-      monsterCardType={monsterEffect?.type}
-      mosterCardValue={monsterEffect?.value}
+      monsterCardType={monsterEffect && monsterEffect.type}
+      mosterCardValue={monsterEffect && monsterEffect.value}
     />
   );
 }

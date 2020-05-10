@@ -5,8 +5,11 @@ import { useGlobalValue } from '../../../context';
 import Result from './layout';
 
 function ResultContainer() {
-  const [{ gameState }] = useGlobalValue();
-  const { winner } = gameState;
+  const [
+    {
+      gameState: { winner }
+    }
+  ] = useGlobalValue();
   return <Result winner={winner} />;
 }
 

@@ -53,7 +53,8 @@ const reducer = {
     monsterShield: monster.shield,
     turns,
     monsterEffect,
-    winner
+    winner,
+    lastClickedCard: null
   })
 };
 

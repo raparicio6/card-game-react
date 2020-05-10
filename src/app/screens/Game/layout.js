@@ -71,6 +71,7 @@ function Game({
               entityType="monster"
               type={monsterCardType}
               value={mosterCardValue}
+              reportClick={false}
             />
             <span className={styles.monsterUses}>{t('Game:monsterUses')}</span>
           </>

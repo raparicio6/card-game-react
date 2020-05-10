@@ -9,14 +9,11 @@ import Card from './layout';
 function CardContainer({ type, value, entityType, className, reportClick }) {
   const [_, dispatchGlobal] = useGlobalValue();
 
-  const handleOnClick = useCallback(
-    event => {
-      if (reportClick) {
-        dispatchGlobal(actionCreators.setLastClickedCard({ value, type }));
-      }
-    },
-    [dispatchGlobal, reportClick, type, value]
-  );
+  const handleOnClick = useCallback(() => {
+    if (reportClick) {
+      dispatchGlobal(actionCreators.setLastClickedCard({ value, type }));
+    }
+  }, [dispatchGlobal, reportClick, type, value]);
 
   return (
     <Card
@@ -37,6 +34,7 @@ CardContainer.propTypes = {
 
 CardContainer.defaultProps = {
   className: '',
+  reportClick: false,
   value: 0
 };
 
