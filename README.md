@@ -1,6 +1,6 @@
 # Card Game
 
-<img alt="Monster" src="./app-image.png">
+<img alt="App" src="./app-image.png">
 
 ## Next Steps
 * Search for Apollo cache policies in order to leverage its potential
