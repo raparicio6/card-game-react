@@ -17,8 +17,4 @@ function App() {
   );
 }
 
-App.defaultProps = {
-  loading: false
-};
-
 export default App;
