@@ -1537,10 +1537,10 @@ exports[`App matches the snapshot 1`] = `
                           </LanguageButtons>
                         </LanguageButtonsContainer>
                         <h1
-                          className="title m-top-3"
+                          className="title m-top-3 row center"
                         />
                         <h2
-                          className="whatIsYourName m-top-6"
+                          className="whatIsYourName m-top-6 row center"
                         />
                         <form
                           onSubmit={[Function]}

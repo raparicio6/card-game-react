@@ -11,8 +11,8 @@ function Home({ handleOnSubmit, handleOnChange }) {
     <div className="row background-wild-sand all-screen-height">
       <div className={`column ${styles.container}`}>
         <LanguageButtons />
-        <h1 className={`${styles.title} m-top-3`}>{t('Home:title')}</h1>
-        <h2 className={`${styles.whatIsYourName} m-top-6`}>{t('Home:whatIsYourName')}</h2>
+        <h1 className={`${styles.title} m-top-3 row center`}>{t('Home:title')}</h1>
+        <h2 className={`${styles.whatIsYourName} m-top-6 row center`}>{t('Home:whatIsYourName')}</h2>
         <form onSubmit={handleOnSubmit}>
           <div className="column">
             <input
