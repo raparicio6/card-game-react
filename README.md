@@ -1,5 +1,7 @@
 # Card Game
 
+[![Build Status](https://circleci.com/gh/raparicio6/card-game-react.svg?style=shield)](https://circleci.com/gh/raparicio6/card-game-react)
+
 <img alt="App" src="./app-image.png">
 
 ## Next Steps
