@@ -81,10 +81,6 @@
     "type": "git",
     "url": "git@github.com:raparicio6/card-game-react.git"
   },
-  "engines": {
-    "node": "12.16.3",
-    "npm": "6.14.4"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint-diff && npm run lint-scss"
